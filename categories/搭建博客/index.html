@@ -138,6 +138,17 @@
 
 
 
+  <!-- 小屏幕不显示fork me on github -->
+  <style>
+  .forkme{
+	display: none;
+  }
+  @media (min-width: 1250px) {
+	.forkme{
+	    display: inline;
+	}
+  }
+  </style>
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -149,8 +160,9 @@
 
   <div class="container sidebar-position-right ">
     <div class="headband"></div>
-
-    <a href="https://github.com/NewbieXu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+	<div class="forkme">
+		<a target="_blank" href="https://github.com/NewbieXu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+	</div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
