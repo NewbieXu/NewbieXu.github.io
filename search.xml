@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[新年的第一篇blog]]></title>
+    <url>%2F2019%2F01%2F02%2F%E6%96%B0%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog%2F</url>
+    <content type="text"><![CDATA[一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。注：标准语法一般在#后跟个空格再写文字 二、字体这是加粗的字体，用两个**左右包括（之后同理）一个是斜体三个是斜体加粗两个~~是删除线 三、引用在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个举例效果如下： 这是引用的内容1 这是2 这是4 四、分割线三个及以上的-或*都可以三个*: (这里我用的6个，不然影响到下面的识别，不知道是不是npp的原因) 五、图片![图片alt](图片地址 “图片title”)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 六、超链接[超链接名称](地址 “title可加可不加”)百度我的GitHub 未完待续~]]></content>
+      <categories>
+        <category>markdown语法</category>
+      </categories>
+      <tags>
+        <tag>markdown语法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F01%2F01%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <categories>
+        <category>hexo语法</category>
+      </categories>
+      <tags>
+        <tag>hexo语法</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[你好，Hexo！]]></title>
