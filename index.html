@@ -397,7 +397,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  342 字
+                  360 字
                 </span>
               
 
@@ -435,48 +435,20 @@
 
       
         
-          
-            <h3 id="Vue计算属性-方法-侦听"><a href="#Vue计算属性-方法-侦听" class="headerlink" title="Vue计算属性 方法 侦听"></a>Vue计算属性 方法 侦听</h3><hr>
-<h4 id="计算属性computed"><a href="#计算属性computed" class="headerlink" title="计算属性computed"></a>计算属性computed</h4><p>计算属性附有<font color="red"><strong>数据缓存机制</strong></font>且不需要重新声明一个新的变量达到<font color="red"><strong>减少冗余数据</strong></font>的效果，当改变其他数据时该方法可不被重新调用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    firstName: &apos;Xu&apos;,</span><br><span class="line">    lastName: &apos;XJay&apos;,</span><br><span class="line">    age: 23</span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">    fullName() &#123;</span><br><span class="line">        consolo.log(&quot;我被调用了一次！&quot;);</span><br><span class="line">        return this.firstName + this.lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 直接用插值表达式&#123;&#123;fullName&#125;&#125;显示即可，不必再data中声明fullName</span><br></pre></td></tr></table></figure></p>
-<h4 id="方法methods"><a href="#方法methods" class="headerlink" title="方法methods"></a>方法methods</h4><p>只要页面上的数据发生改变，则方法内的函数将重新调用一遍。 </p>
-<pre><code>data: {
-    firstName: &apos;Xu&apos;,
-    lastName: &apos;XJay&apos;,
-    age: 23
-},
-methods: {
-    fullName() {
-        consolo.log(&quot;我被调用了一次！&quot;);
-        return this.firstName + this.lastName;
-    }
-}
-// 直接{{fullName()}}显示即可，方法中的函数用插值表达式需加()
-</code></pre><h4 id="侦听-监听-watch"><a href="#侦听-监听-watch" class="headerlink" title="侦听(监听)watch"></a>侦听(监听)watch</h4><p>用watch时必须使用冗余的数据了，但是有数据缓存的效果。watch最重要的是能进行<font color="red"><strong>异步操作(Axios)</strong></font>。  </p>
-<pre><code>data: {
-    firstName: &apos;Xu&apos;,
-    lastName: &apos;XJay&apos;,
-    fullName: &apos;&apos;,
-    age: 23
-},
-watch: {
-    firstName() {
-        consolo.log(&quot;我被调用了一次！&quot;);
-        this.fullName = this.firstName + this.lastName;
-    },
-    lastName() {
-        consolo.log(&quot;我被调用了一次！&quot;);
-        this.fullName = this.firstName + this.lastName;
-    }
-},
-</code></pre><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><font color="red"><strong>当实现的功能相同时(如上述问题)，优先选择使用computed，一方面有数据缓存机制，另一方面代码简洁明了！</strong></font>
-
-          
+          <h3 id="Vue计算属性-方法-侦听"><a href="#Vue计算属性-方法-侦听" class="headerlink" title="Vue计算属性 方法 侦听"></a>Vue计算属性 方法 侦听</h3><h4 id="计算属性computed"><a href="#计算属性computed" class="headerlink" title="计算属性computed"></a>计算属性computed</h4><p>计算属性附有<font color="red"><strong>数据缓存机制</strong></font>且不需要重新声明一个新的变量达到<font color="red"><strong>减少冗余数据</strong></font>的效果，当改变其他数据时该方法可不被重新调用。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/05/26/Vue计算属性-方法-侦听/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
 		<div>
 		  
 		</div>
-    </div>
+    </p></div>
     
     
     
