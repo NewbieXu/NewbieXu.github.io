@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Vue计算属性 方法 侦听]]></title>
+    <url>%2F2019%2F05%2F26%2FVue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E6%96%B9%E6%B3%95-%E4%BE%A6%E5%90%AC%2F</url>
+    <content type="text"><![CDATA[Vue计算属性 方法 侦听 计算属性computed计算属性附有数据缓存机制且不需要重新声明一个新的变量达到减少冗余数据的效果，当改变其他数据时该方法可不被重新调用。123456789101112data: &#123; firstName: &apos;Xu&apos;, lastName: &apos;XJay&apos;, age: 23&#125;,computed: &#123; fullName() &#123; consolo.log(&quot;我被调用了一次！&quot;); return this.firstName + this.lastName; &#125;&#125;// 直接用插值表达式&#123;&#123;fullName&#125;&#125;显示即可，不必再data中声明fullName 方法methods只要页面上的数据发生改变，则方法内的函数将重新调用一遍。 data: { firstName: &apos;Xu&apos;, lastName: &apos;XJay&apos;, age: 23 }, methods: { fullName() { consolo.log(&quot;我被调用了一次！&quot;); return this.firstName + this.lastName; } } // 直接{{fullName()}}显示即可，方法中的函数用插值表达式需加() 侦听(监听)watch用watch时必须使用冗余的数据了，但是有数据缓存的效果。watch最重要的是能进行异步操作(Axios)。 data: { firstName: &apos;Xu&apos;, lastName: &apos;XJay&apos;, fullName: &apos;&apos;, age: 23 }, watch: { firstName() { consolo.log(&quot;我被调用了一次！&quot;); this.fullName = this.firstName + this.lastName; }, lastName() { consolo.log(&quot;我被调用了一次！&quot;); this.fullName = this.firstName + this.lastName; } }, 总结当实现的功能相同时(如上述问题)，优先选择使用computed，一方面有数据缓存机制，另一方面代码简洁明了！]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue计算属性和侦听器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[新年的第一篇blog]]></title>
     <url>%2F2019%2F01%2F02%2F%E6%96%B0%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog%2F</url>
-    <content type="text"><![CDATA[一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。注：标准语法一般在#后跟个空格再写文字 二、字体这是加粗的字体，用两个**左右包括（之后同理）一个是斜体三个是斜体加粗两个~~是删除线 三、引用在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个举例效果如下： 这是引用的内容1 这是2 这是4 四、分割线三个及以上的-或*都可以三个*: (这里我用的6个，不然影响到下面的识别，不知道是不是npp的原因) 五、图片![图片alt](图片地址 “图片title”)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 六、超链接[超链接名称](地址 “title可加可不加”)百度我的GitHub 未完待续~]]></content>
+    <content type="text"><![CDATA[一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。注：标准语法一般在#后跟个空格再写文字 二、字体这是加粗的字体，用两个**左右包括（之后同理）一个是斜体三个是斜体加粗两个~~是删除线 三、引用在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个举例效果如下： 这是引用的内容1 这是2 这是4 四、分割线三个及以上的-或*都可以三个*: 五、图片![图片alt](图片地址 “图片title”)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 六、超链接[超链接名称](地址 “title可加可不加”)百度我的GitHub 未完待续~]]></content>
       <categories>
         <category>markdown语法</category>
       </categories>

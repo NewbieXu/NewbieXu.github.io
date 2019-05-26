@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xuxingjie.com/"/>
-  <updated>2019-01-02T14:36:27.768Z</updated>
+  <updated>2019-05-26T09:54:40.307Z</updated>
   <id>http://xuxingjie.com/</id>
   
   <author>
@@ -17,13 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue计算属性 方法 侦听</title>
+    <link href="http://xuxingjie.com/2019/05/26/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7-%E6%96%B9%E6%B3%95-%E4%BE%A6%E5%90%AC/"/>
+    <id>http://xuxingjie.com/2019/05/26/Vue计算属性-方法-侦听/</id>
+    <published>2019-05-26T09:53:10.000Z</published>
+    <updated>2019-05-26T09:54:40.307Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Vue计算属性-方法-侦听"><a href="#Vue计算属性-方法-侦听" class="headerlink" title="Vue计算属性 方法 侦听"></a>Vue计算属性 方法 侦听</h3><hr><h4 id="计算属性computed"><a href="#计算属性computed" class="headerlink" title="计算属性computed"></a>计算属性computed</h4><p>计算属性附有<font color="red"><strong>数据缓存机制</strong></font>且不需要重新声明一个新的变量达到<font color="red"><strong>减少冗余数据</strong></font>的效果，当改变其他数据时该方法可不被重新调用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">    firstName: &apos;Xu&apos;,</span><br><span class="line">    lastName: &apos;XJay&apos;,</span><br><span class="line">    age: 23</span><br><span class="line">&#125;,</span><br><span class="line">computed: &#123;</span><br><span class="line">    fullName() &#123;</span><br><span class="line">        consolo.log(&quot;我被调用了一次！&quot;);</span><br><span class="line">        return this.firstName + this.lastName;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">// 直接用插值表达式&#123;&#123;fullName&#125;&#125;显示即可，不必再data中声明fullName</span><br></pre></td></tr></table></figure></p><h4 id="方法methods"><a href="#方法methods" class="headerlink" title="方法methods"></a>方法methods</h4><p>只要页面上的数据发生改变，则方法内的函数将重新调用一遍。 </p><pre><code>data: {    firstName: &apos;Xu&apos;,    lastName: &apos;XJay&apos;,    age: 23},methods: {    fullName() {        consolo.log(&quot;我被调用了一次！&quot;);        return this.firstName + this.lastName;    }}// 直接{{fullName()}}显示即可，方法中的函数用插值表达式需加()</code></pre><h4 id="侦听-监听-watch"><a href="#侦听-监听-watch" class="headerlink" title="侦听(监听)watch"></a>侦听(监听)watch</h4><p>用watch时必须使用冗余的数据了，但是有数据缓存的效果。watch最重要的是能进行<font color="red"><strong>异步操作(Axios)</strong></font>。  </p><pre><code>data: {    firstName: &apos;Xu&apos;,    lastName: &apos;XJay&apos;,    fullName: &apos;&apos;,    age: 23},watch: {    firstName() {        consolo.log(&quot;我被调用了一次！&quot;);        this.fullName = this.firstName + this.lastName;    },    lastName() {        consolo.log(&quot;我被调用了一次！&quot;);        this.fullName = this.firstName + this.lastName;    }},</code></pre><h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><font color="red"><strong>当实现的功能相同时(如上述问题)，优先选择使用computed，一方面有数据缓存机制，另一方面代码简洁明了！</strong></font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Vue计算属性-方法-侦听&quot;&gt;&lt;a href=&quot;#Vue计算属性-方法-侦听&quot; class=&quot;headerlink&quot; title=&quot;Vue计算属性 方法 侦听&quot;&gt;&lt;/a&gt;Vue计算属性 方法 侦听&lt;/h3&gt;&lt;hr&gt;
+&lt;h4 id=&quot;计算属性computed&quot;&gt;&lt;a
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="http://xuxingjie.com/categories/Vue/"/>
+    
+    
+      <category term="Vue计算属性和侦听器" scheme="http://xuxingjie.com/tags/Vue%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7%E5%92%8C%E4%BE%A6%E5%90%AC%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>新年的第一篇blog</title>
     <link href="http://xuxingjie.com/2019/01/02/%E6%96%B0%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/"/>
     <id>http://xuxingjie.com/2019/01/02/新年的第一篇blog/</id>
     <published>2019-01-02T12:00:01.000Z</published>
-    <updated>2019-01-02T14:36:27.768Z</updated>
+    <updated>2019-02-27T02:10:10.098Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h3><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。<br>注：标准语法一般在#后跟个空格再写文字<br><a id="more"></a></p><h3 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h3><p><strong>这是加粗的字体，用两个**左右包括（之后同理）</strong><br><em>一个是斜体</em><br><strong><em>三个是斜体加粗</em></strong><br><del>两个~~是删除线</del>  </p><h3 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h3><p>在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个<br>举例效果如下： </p><blockquote><p>这是引用的内容1</p><blockquote><p>这是2</p><blockquote><blockquote><p>这是4</p></blockquote></blockquote></blockquote></blockquote><h3 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h3><p>三个及以上的-或*都可以<br>三个*:  (这里我用的<strong>6</strong>个，不然影响到下面的识别，不知道是不是npp的原因)</p><hr><h3 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h3><p>![图片alt](图片地址 “图片title”)<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加<br><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg" alt="区域块" title="区域块"></p><h3 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h3><p>[超链接名称](地址 “title可加可不加”)<br><a href="http://baidu.com" target="_blank" rel="noopener">百度</a><br><a href="https://github.com/NewbieXu" target="_blank" rel="noopener">我的GitHub</a></p><h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续~"></a>未完待续~</h1>]]></content>
+    <content type="html"><![CDATA[<h3 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h3><p>在想要设置为标题的文字前面加#来表示<br>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。<br>注：标准语法一般在#后跟个空格再写文字<br><a id="more"></a></p><h3 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h3><p><strong>这是加粗的字体，用两个**左右包括（之后同理）</strong><br><em>一个是斜体</em><br><strong><em>三个是斜体加粗</em></strong><br><del>两个~~是删除线</del>  </p><h3 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h3><p>在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个<br>举例效果如下： </p><blockquote><p>这是引用的内容1</p><blockquote><p>这是2</p><blockquote><blockquote><p>这是4</p></blockquote></blockquote></blockquote></blockquote><h3 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h3><p>三个及以上的-或*都可以<br>三个*:  </p><hr><h3 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h3><p>![图片alt](图片地址 “图片title”)<br>图片alt就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加<br><img src="./../images/alipay.jpg" alt="图片" title="XJay"></p><h3 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h3><p>[超链接名称](地址 “title可加可不加”)<br><a href="http://baidu.com" target="_blank" rel="noopener">百度</a><br><a href="https://github.com/NewbieXu" target="_blank" rel="noopener">我的GitHub</a></p><h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续~"></a>未完待续~</h1>]]></content>
     
     <summary type="html">
     
