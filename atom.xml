@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xuxingjie.com/"/>
-  <updated>2019-05-26T10:24:49.536Z</updated>
+  <updated>2019-06-04T01:25:54.093Z</updated>
   <id>http://xuxingjie.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片显示问题</title>
+    <link href="http://xuxingjie.com/2019/06/04/%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>http://xuxingjie.com/2019/06/04/图片显示问题/</id>
+    <published>2019-06-04T00:54:02.000Z</published>
+    <updated>2019-06-04T01:25:54.093Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="解决Hexo图片无法显示"><a href="#解决Hexo图片无法显示" class="headerlink" title="解决Hexo图片无法显示"></a>解决Hexo图片无法显示</h3><p><img src="/.com//06/04/alipay.jpg" alt="正在尝试解决图片无法显示的问题"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;解决Hexo图片无法显示&quot;&gt;&lt;a href=&quot;#解决Hexo图片无法显示&quot; class=&quot;headerlink&quot; title=&quot;解决Hexo图片无法显示&quot;&gt;&lt;/a&gt;解决Hexo图片无法显示&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;/.com//06/04/alipay.
+      
+    
+    </summary>
+    
+      <category term="hexo图片显示问题" scheme="http://xuxingjie.com/categories/hexo%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    
+    
+      <category term="hexo语法" scheme="http://xuxingjie.com/tags/hexo%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Vue计算属性 方法 侦听</title>
@@ -27,7 +52,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;Vue计算属性-方法-侦听&quot;&gt;&lt;a href=&quot;#Vue计算属性-方法-侦听&quot; class=&quot;headerlink&quot; title=&quot;Vue计算属性 方法 侦听&quot;&gt;&lt;/a&gt;Vue计算属性 方法 侦听&lt;/h3&gt;&lt;h4 id=&quot;计算属性computed&quot;&gt;&lt;a href=&quot;#计算属性computed&quot; class=&quot;headerlink&quot; title=&quot;计算属性computed&quot;&gt;&lt;/a&gt;计算属性computed&lt;/h4&gt;&lt;p&gt;计算属性附有&lt;font color=&quot;red&quot;&gt;&lt;strong&gt;数据缓存机制&lt;/strong&gt;&lt;/font&gt;且不需要重新声明一个新的变量达到&lt;font color=&quot;red&quot;&gt;&lt;strong&gt;减少冗余数据&lt;/strong&gt;&lt;/font&gt;的效果，当改变其他数据时该方法可不被重新调用。&lt;br&gt;
+      &lt;h3 id=&quot;Vue计算属性-方法-侦听&quot;&gt;&lt;a href=&quot;#Vue计算属性-方法-侦听&quot; class=&quot;headerlink&quot; title=&quot;Vue计算属性 方法 侦听&quot;&gt;&lt;/a&gt;Vue计算属性 方法 侦听&lt;/h3&gt;&lt;h4 id=&quot;计算属性computed&quot;&gt;&lt;a href=&quot;#计算属性computed&quot; class=&quot;headerlink&quot; title=&quot;计算属性computed&quot;&gt;&lt;/a&gt;计算属性computed&lt;/h4&gt;&lt;p&gt;计算属性附有&lt;font color=&quot;red&quot;&gt;&lt;strong&gt;数据缓存机制&lt;/strong&gt;&lt;/font&gt;且不需要重新声明一个新的变量达到&lt;font color=&quot;red&quot;&gt;&lt;strong&gt;减少冗余数据&lt;/strong&gt;&lt;/font&gt;的效果，当改变其他数据时该方法可不被重新调用。&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -49,7 +74,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;一、标题&quot;&gt;&lt;a href=&quot;#一、标题&quot; class=&quot;headerlink&quot; title=&quot;一、标题&quot;&gt;&lt;/a&gt;一、标题&lt;/h3&gt;&lt;p&gt;在想要设置为标题的文字前面加#来表示&lt;br&gt;一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。&lt;br&gt;注：标准语法一般在#后跟个空格再写文字&lt;br&gt;
+      &lt;h3 id=&quot;一、标题&quot;&gt;&lt;a href=&quot;#一、标题&quot; class=&quot;headerlink&quot; title=&quot;一、标题&quot;&gt;&lt;/a&gt;一、标题&lt;/h3&gt;&lt;p&gt;在想要设置为标题的文字前面加#来表示&lt;br&gt;一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。&lt;br&gt;注：标准语法一般在#后跟个空格再写文字&lt;br&gt;&lt;/p&gt;
     
     </summary>
     
@@ -94,7 +119,7 @@
     <summary type="html">
     
       &lt;blockquote&gt;
-&lt;p&gt;测试用的？？？&lt;br&gt;
+&lt;p&gt;测试用的？？？&lt;br&gt;&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
