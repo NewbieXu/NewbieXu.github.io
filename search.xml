@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[图片显示问题]]></title>
     <url>%2F2019%2F06%2F04%2F%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[解决Hexo图片无法显示]]></content>
+    <content type="text"><![CDATA[解决Hexo图片无法显示 打开F12调试检查路径问题 也可以用img的方式插入图片，可自定义图片大小 1&lt;img src=&quot;/2019/06/04/images/alipay.jpg&quot; width=&quot;50%&quot; height=&quot;50%&quot; align=&quot;center&quot; title=&quot;XJay&quot;&gt;]]></content>
       <categories>
         <category>hexo图片显示问题</category>
       </categories>
@@ -25,7 +25,7 @@
   <entry>
     <title><![CDATA[新年的第一篇blog]]></title>
     <url>%2F2019%2F01%2F02%2F%E6%96%B0%E5%B9%B4%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog%2F</url>
-    <content type="text"><![CDATA[一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。注：标准语法一般在#后跟个空格再写文字 二、字体这是加粗的字体，用两个**左右包括（之后同理）一个是斜体三个是斜体加粗两个~~是删除线 三、引用在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个举例效果如下： 这是引用的内容1 这是2 这是4 四、分割线三个及以上的-或*都可以三个*: 五、图片![图片alt](图片地址 “图片title”)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 六、超链接[超链接名称](地址 “title可加可不加”)百度我的GitHub 未完待续~]]></content>
+    <content type="text"><![CDATA[一、标题在想要设置为标题的文字前面加#来表示一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。注：标准语法一般在#后跟个空格再写文字 二、字体这是加粗的字体，用两个**左右包括（之后同理）一个是斜体三个是斜体加粗两个~~是删除线 三、引用在引用的文字前面加>即可，也可以嵌套引用，如加两个>>等n个举例效果如下： 这是引用的内容1 这是2 这是4 四、分割线三个及以上的-或*都可以三个*: 五、图片![图片alt](图片地址 “图片title”)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 XJay的支付宝账号 六、超链接[超链接名称](地址 “title可加可不加”)百度我的GitHub 未完待续~]]></content>
       <categories>
         <category>markdown语法</category>
       </categories>
